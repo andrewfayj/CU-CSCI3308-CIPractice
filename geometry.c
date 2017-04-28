@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @andrewfayj
- Sign out
- Watch 1
-  Star 0
-  Fork 0 FredLoh/LabRepo
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathLabRepo/geometry.c
-8c4439e  on Nov 30, 2015
-@FredLoh FredLoh Added geo code
-2 contributors @asayler @FredLoh
-RawBlameHistory    
-93 lines (74 sloc)  2.03 KB
 /*
  * geometry.c
  * Andy Sayler
