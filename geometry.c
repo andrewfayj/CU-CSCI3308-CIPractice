@@ -48,6 +48,26 @@ bool coord_2d_eq(const coord_2d_t* a, const coord_2d_t* b){
 
 }
 
+double coord_2d_area_triangle(const coord_2d_t *a, const coord_2d_t *b, const coord_2d_t *c)
+{
+
+    if(!a){
+        DEBUG(__FILE__, __LINE__, __func__, "'a' must not be NULL");
+        return NAN;
+    }
+    if(!b){
+        DEBUG(__FILE__, __LINE__, __func__, "'b' must not be NULL");
+        return NAN;
+    }
+
+    if(!c){
+        DEBUG(__FILE__, __LINE__, __func__, "'c' must not be NULL");
+        return NAN;
+    }
+    printf("a:(%f,%f), b:(%f,%f), c:(%f,%f)\n",a->x,a->y,b->x,b->y,c->x,c->y);
+    return fabs((a->x * (b->y-c->y) + b->x*(c->y-a->y) + c->x * (a->y-b->y))/2.0);
+}
+
 void coord_2d_midpoint(coord_2d_t* mid, const coord_2d_t* a, const coord_2d_t* b){
 
     /* Input Checks */
